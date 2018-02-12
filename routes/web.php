@@ -15,6 +15,9 @@ Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 
+// Creates routes for all 'resource' functions (index, create, store, show, edit, update, destroy)
+Route::resource('posts', 'PostsController');
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
